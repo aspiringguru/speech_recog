@@ -42,6 +42,8 @@ recognition.onresult = function(event) {
 
   var last = event.results.length - 1;
   console.log("last:"+last)
+  console.log("event.results.length:"+event.results.length)
+  console.log("typeof(event.results):"+typeof(event.results)+":"+event.results)
   var color = event.results[last][0].transcript;
   console.log("color:"+color)
 
@@ -51,13 +53,16 @@ recognition.onresult = function(event) {
 }
 
 recognition.onspeechend = function() {
+  console.log("recognition.onspeechend. calling recognition.stop().")
   recognition.stop();
 }
 
 recognition.onnomatch = function(event) {
+  console.log("recognition.onnomatch");
   diagnostic.textContent = "I didn't recognise that color.";
 }
 
 recognition.onerror = function(event) {
+  console.log("recognition.onerror");
   diagnostic.textContent = 'Error occurred in recognition: ' + event.error;
 }
