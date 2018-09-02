@@ -2,3 +2,10 @@
 *.png
 *.sqlite3
 *.zip
+# Ignore everything inside the virtual env directories
+/spacytut/mypython/*
+/semantic/semanticenv/*
+**/mypython/*
+**/semanticenv/*
+/spacytut/mypython/**
+/semantic/semanticenv/**
