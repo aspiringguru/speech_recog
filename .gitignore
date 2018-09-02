@@ -9,3 +9,11 @@
 **/semanticenv/*
 /spacytut/mypython/**
 /semantic/semanticenv/**
+.ipynb_checkpoints
+
+
+
+#to clear files now ignored by .gitignore
+#git rm -r --cached .
+#git add -A
+#git commit -am 'Removing ignored files'
