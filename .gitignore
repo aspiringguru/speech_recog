@@ -9,6 +9,8 @@
 **/semanticenv/*
 /spacytut/mypython/**
 /semantic/semanticenv/**
+
+/dialogflow/dialogflowenv/**
 .ipynb_checkpoints
 
 
